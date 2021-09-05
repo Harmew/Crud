@@ -1,0 +1,15 @@
+.btn-primary {
+    margin-bottom: 30px;
+}
+
+.nav button a {
+    text-decoration: none;
+}
+
+i {
+    margin-right: .3em;
+}
+
+.formulario div:last-child {
+    padding-bottom: 30px
+}

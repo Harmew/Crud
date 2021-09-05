@@ -9,7 +9,7 @@ const createRow = (client) => {
         <td>${client.email}</td>
         <td>${client.telefone}</td>
         <td id="buttons-edit">
-            <button type="button" class="btn btn-success"><i class="bi bi-eye-fill"></i>Visualizar</button>
+            <a href="./telas/vizualizar.html?id=${client.id}"><button type="button" class="btn btn-success"><i class="bi bi-eye-fill"></i>Visualizar</button></a>
             <button type="button" class="btn btn-warning"><i class="bi bi-pencil-square"></i>Editar</button>
             <button type="button" class="btn btn-danger" id="deletar-client" data-index="${client.id}"><i class="bi bi-trash-fill"></i>Excluir</button>
         </td>
