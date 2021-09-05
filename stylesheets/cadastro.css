@@ -1,0 +1,172 @@
+.btn-primary {
+    margin-bottom: 30px;
+}
+
+.nav button a {
+    text-decoration: none;
+}
+
+i {
+    margin-right: .3em;
+}
+
+
+/* Modal */
+
+.modal * {
+    box-sizing: border-box
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+.modal.active {
+    display: block;
+}
+
+.modal button {
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.modal button:hover {
+  opacity:1;
+}
+
+.modal .cancelbtn {
+  width: 30%;
+}
+
+.modal .cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+.modal .container {
+  padding: 16px;
+  text-align: center;
+}
+
+.modal .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  max-width: 400px; 
+}
+
+@media screen and (max-width: 300px) {
+    .modal .cancelbtn, .modal .deletebtn {
+    width: 100%;
+  }
+}
+
+.modal-content {
+  animation: fade 0.4s forwards;
+}
+
+@keyframes fade {
+    0% { 
+        opacity: 0; 
+        transform: translate3d(0, -60px, 0);
+    }
+    100% { 
+        opacity: 1; 
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.error-span {
+  display: none;
+}
+
+.error-span.active {
+  display: block;
+}
+
+.error-span span {
+  color: firebrick;
+}
+
+.validity-cep {
+  color: firebrick;
+  display: none;
+}
+
+/* Modal Sucess */
+
+.modal-sucess * {
+  box-sizing: border-box
+}
+
+.modal-sucess {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+.modal-sucess.active {
+  display: block;
+}
+
+.modal-sucess button {
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+
+.modal-sucess button:hover {
+opacity:1;
+}
+
+.modal-sucess .cancelbtn {
+width: 30%;
+}
+
+.modal-sucess .cancelbtn {
+background-color: #198754;
+color: black;
+}
+
+.modal-sucess .container {
+padding: 16px;
+text-align: center;
+}
+
+.modal-sucess .modal-content {
+background-color: #fefefe;
+margin: 5% auto 15% auto; 
+border: 1px solid #888;
+max-width: 630px; 
+}
+
+@media screen and (max-width: 300px) {
+  .modal-sucess .cancelbtn, .modal-sucess .deletebtn {
+  width: 100%;
+  }
+}

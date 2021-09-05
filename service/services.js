@@ -60,7 +60,7 @@ const detalhaCliente = (id) => {
     })
 }
   
-export const servicos = {
+export const services = {
     listaClientes,
     criarClientes,
     removeCliente,

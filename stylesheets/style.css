@@ -60,8 +60,8 @@ i {
 }
 
 .modal .cancelbtn, .modal .deletebtn {
-  float: left;
-  width: 50%;
+  margin: auto;
+  width: 40%;
 }
 
 .modal .cancelbtn {
@@ -82,7 +82,7 @@ i {
   background-color: #fefefe;
   margin: 5% auto 15% auto; 
   border: 1px solid #888;
-  width: 80%; 
+  width: 60%; 
 }
 
 .modal hr {

@@ -1,4 +1,4 @@
-import { servicos } from "../service/servicos.js";
+import { services } from "../service/services.js";
 
 const createRow = (client) => {
     const containerBody = document.querySelector('#table>tbody')
@@ -34,7 +34,7 @@ const dltModalClose = () => {
 const whatsTypeIs = (event) => {
     if(event.target.classList.contains('deletebtn')) {
         let id = event.target.dataset.index
-            servicos.removeCliente(id)
+            services.removeCliente(id)
     } else
         dltModalClose()
 }
@@ -68,7 +68,7 @@ document.querySelectorAll('.clearfix-button').forEach(item => {
 
 const carregar = async () => {
     try {
-        const listaClientes = await servicos.listaClientes()
+        const listaClientes = await services.listaClientes()
         clientGlance(listaClientes)
     }
     catch (erro) {
