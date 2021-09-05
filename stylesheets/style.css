@@ -1,0 +1,133 @@
+/* Geral */
+
+i {
+    margin-right: .3em;
+}
+
+.container-md .create-button {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn-warning {
+    color: #fff;
+}
+
+.btn-warning:hover, .btn-warning:focus {
+    color:#fff;
+}
+
+/* Modal */
+
+.modal * {
+    box-sizing: border-box
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+.modal.active {
+    display: block;
+}
+
+.modal button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.modal button:hover {
+  opacity:1;
+}
+
+.modal .cancelbtn, .modal .deletebtn {
+  float: left;
+  width: 50%;
+}
+
+.modal .cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+.modal .deletebtn {
+  background-color: #f44336;
+}
+
+.modal .container {
+  padding: 16px;
+  text-align: center;
+}
+
+.modal .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+.modal hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.modal .closer-delete {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.modal .closer-delete:hover,
+.modal .closer-delete:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.modal .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+    .modal .cancelbtn, .modal .deletebtn {
+    width: 100%;
+  }
+}
+
+.modal-content {
+  animation: fade 0.4s forwards;
+}
+
+@keyframes fade {
+    0% { 
+        opacity: 0; 
+        transform: translate3d(0, -60px, 0);
+    }
+    100% { 
+        opacity: 1; 
+        transform: translate3d(0, 0, 0);
+    }
+}
