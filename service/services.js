@@ -21,7 +21,7 @@ const removeCliente = (id) => {
 }
 
 // Create
-const criarClientes = (nome, email, nascimento, telefone, cpf, cep, logradouro, numero, bairro, cidade, estado) => {
+const criarClientes = (nome, email, telefone, nascimento, cpf, cep, logradouro, numero, bairro, cidade, estado) => {
     return fetch(`http://localhost:3000/clients`, {
         method: 'POST',
         headers: {

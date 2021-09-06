@@ -1,5 +1,6 @@
 import { services } from "../service/services.js"
 
+const idDados = document.querySelector('#identificador')
 const nomeDados = document.querySelector('#nome')
 const emailDados = document.querySelector('#email')
 const telefoneDados = document.querySelector('#telefone')
@@ -16,7 +17,7 @@ let apiEndereco
 
 async function carregarDados() {
   const dadosCliente = apiEndereco
-
+  idDados.value += dadosCliente.id
   nomeDados.value += dadosCliente.nome
   emailDados.value += dadosCliente.email
   telefoneDados.value += dadosCliente.telefone

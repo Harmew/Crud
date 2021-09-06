@@ -1,0 +1,19 @@
+{
+    "name": "crud",
+    "version": "1.0.0",
+    "description": "teste de crud usando uma fake api",
+    "main": "index.html",
+    "dependencies": {
+      "json-server": "^0.16.3"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "start": "npx json-server clients.json"
+    },
+    "repository": {
+      "type": "git",
+      "url": "github.com"
+    },
+    "author": "https://github.com/harmew",
+    "license": "ISC"
+  }

@@ -22,6 +22,11 @@
 
         <form class="formulario">
             <div class="mb-3">
+                <label for="identificador" class="form-label">ID:</label>
+                <input type="number" class="form-control" id="identificador" readonly>
+            </div>
+
+            <div class="mb-3">
                 <label for="nome" class="form-label">Nome:</label>
                 <input type="text" class="form-control" id="nome">
             </div>
@@ -49,6 +54,7 @@
             <div class="mb-3">
                 <label for="cep" class="form-label">CEP:</label>
                 <input type="number" class="form-control" id="cep">
+                <span class="validity-cep">CEP não encontrado!</span>
             </div>
 
             <div class="mb-3">

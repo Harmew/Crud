@@ -13,3 +13,9 @@ i {
 .formulario div:last-child {
     padding-bottom: 30px
 }
+
+
+.validity-cep {
+    color: firebrick;
+    display: none;
+  }
