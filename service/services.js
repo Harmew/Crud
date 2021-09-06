@@ -60,9 +60,23 @@ const detalhaCliente = (id) => {
     })
 }
   
+// Edit Clients
+const editClient = (dados, id) => {
+    fetch(`http://localhost:3000/clients/${id}`, {
+        method: 'PUT',
+        body: JSON.stringify(dados),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    })
+    .then(response => response.json())
+    .then(json => console.log(json))
+}
+
 export const services = {
     listaClientes,
     criarClientes,
     removeCliente,
-    detalhaCliente
+    detalhaCliente,
+    editClient
 }

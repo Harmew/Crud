@@ -44,3 +44,21 @@ async function carregaEndereco() {
   
 carregaEndereco()
 
+
+const updateClient = () => {
+    const nome = document.querySelector('#nome').value
+    const email = document.querySelector('#email').value
+    const telefone = document.querySelector('#telefone').value
+    const nascimento = document.querySelector('#nascimento').value
+    const cpf = document.querySelector('#cpf').value
+    const cep = document.querySelector('#cep').value
+    const logradouro = document.querySelector('#logradouro').value
+    const numero = document.querySelector('#numero').value
+    const bairro = document.querySelector('#bairro').value
+    const cidade = document.querySelector('#cidade').value
+    const estado = document.querySelector('#estado') .value
+
+}
+
+document.getElementById('buttonEdit')
+    .addEventListener('click', updateClient)
