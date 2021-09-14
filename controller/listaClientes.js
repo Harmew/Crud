@@ -19,12 +19,6 @@ const createRow = (client) => {
   return localClient
 }
 
-const clientGlance = (listaClientes) => {
-    listaClientes.forEach((cliente => {
-        createRow(cliente)
-    }))
-}
-
 const tabela = document.querySelector('tbody')
 
 const dltModalClose = () => {
@@ -69,7 +63,7 @@ document.querySelectorAll('.clearfix-button').forEach(item => {
 const carregar = async () => {
     try {
         const listaClientes = await services.listaClientes()
-        clientGlance(listaClientes)
+        listaClientes.forEach(cliente => createRow(cliente))
     }
     catch (erro) {
         console.log(erro)

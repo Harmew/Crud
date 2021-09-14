@@ -18,4 +18,8 @@ i {
 .validity-cep {
     color: firebrick;
     display: none;
-  }
+}
+
+#buttonEdit {
+    margin-bottom: 30px;
+}
